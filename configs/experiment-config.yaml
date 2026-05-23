@@ -1,0 +1,28 @@
+experiment:
+  objective: "Compare fuzzing tools for detecting cybersecurity vulnerabilities in REST APIs"
+  time_limit_minutes: 30
+  repetitions_per_tool: 3
+
+apis:
+  - name: "OWASP crAPI"
+    type: "REST API"
+    url: "http://localhost:8888"
+    category: "Intentionally vulnerable API"
+    focus: "OWASP API Top 10"
+
+tools:
+  - name: "Schemathesis"
+  - name: "RESTler"
+  - name: "OWASP ZAP API Scanner"
+  - name: "EvoMaster"
+
+metrics:
+  - confirmed_vulnerabilities
+  - reported_findings
+  - false_positives
+  - endpoint_coverage
+  - http_5xx_responses
+  - authentication_findings
+  - authorization_findings
+  - input_validation_findings
+  - execution_time

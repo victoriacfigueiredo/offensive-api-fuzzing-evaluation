@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+
+logs/*
+results/*
+evidence/*
+reports/*
+
+!logs/.gitkeep
+!results/.gitkeep
+!evidence/.gitkeep
+!reports/.gitkeep
