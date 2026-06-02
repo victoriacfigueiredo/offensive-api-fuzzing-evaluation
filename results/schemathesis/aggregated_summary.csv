@@ -1,0 +1,2 @@
+tool,api,runs,seed,operations_tested,operations_total,avg_stateful_scenarios,avg_api_links_covered,api_links_total,avg_unique_failures,avg_server_errors,avg_schema_violations,avg_duration_seconds
+Schemathesis,crAPI,3,12345,44,44,404.33,14.33,36,120.00,15.67,12.00,136.78
