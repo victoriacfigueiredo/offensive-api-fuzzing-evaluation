@@ -1,0 +1,4 @@
+tool,api,run,seed,operations_selected,operations_tested,examples_passed,examples_failed,fuzzing_passed,fuzzing_failed,stateful_scenarios,stateful_passed,stateful_failed,api_links_covered,api_links_total,unique_failures,warnings,auth_failures,duration_seconds
+Schemathesis,crAPI,run_01,12345,44,44,16,15,6,38,505,471,34,21,36,124,3,2,170.56
+Schemathesis,crAPI,run_02,12345,44,44,16,15,5,39,256,231,25,10,36,117,3,5,93.16
+Schemathesis,crAPI,run_03,12345,44,44,16,15,5,39,452,424,28,12,36,119,3,5,146.63

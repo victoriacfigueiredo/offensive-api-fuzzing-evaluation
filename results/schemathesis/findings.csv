@@ -1,0 +1,6 @@
+tool,endpoint,finding_type,severity,confirmed
+Schemathesis,/workshop/api/shop/orders/{order_id},Missing Authentication,High,Pending
+Schemathesis,/identity/api/auth/v2/check-otp,HTTP 500,Medium,Pending
+Schemathesis,/identity/api/auth/v3/check-otp,HTTP 500,Medium,Pending
+Schemathesis,/workshop/api/mechanic/receive_report,HTTP 500,Medium,Pending
+Schemathesis,/community/api/v2/community/posts/recent,Schema Violation,Low,Pending

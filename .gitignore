@@ -5,11 +5,7 @@ venv/
 .venv/
 
 logs/*
-results/*
-evidence/*
-reports/*
-
 !logs/.gitkeep
-!results/.gitkeep
-!evidence/.gitkeep
+
+reports/*
 !reports/.gitkeep
