@@ -7,9 +7,6 @@ venv/
 logs/*
 !logs/.gitkeep
 
-reports/*
-!reports/.gitkeep
-
 configs/restler_token.sh
 
 Compile/
