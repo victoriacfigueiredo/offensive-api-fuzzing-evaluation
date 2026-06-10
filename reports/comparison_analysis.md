@@ -113,3 +113,73 @@ Other RESTler buckets remain candidates and should be validated manually before 
 This comparison depends on the quality of the OpenAPI specification and the compatibility of each tool with the target API. RESTler's lower coverage should be interpreted together with the required manual adjustments and the binary-response limitation observed during execution.
 
 Additionally, not all RESTler bug buckets were manually validated. Therefore, the number of confirmed findings is lower than the number of reproduced bug buckets reported by the tool.
+
+
+# Finding Coverage Matrix
+
+| Finding                          | Endpoint                                         | Schemathesis | RESTler |
+| -------------------------------- | ------------------------------------------------ | :----------: | :-----: |
+| Authentication Bypass            | `/workshop/api/shop/orders/{order_id}`           |       ✅      |    ❌    |
+| IDOR / Broken Access Control     | `/workshop/api/shop/orders/{order_id}`           |       ✅      |    ❌    |
+| Improper Authentication Handling | `/identity/api/v2/user/dashboard`                |       ✅      |    ❌    |
+| Improper Error Handling          | `/identity/api/auth/v2/check-otp`                |       ✅      |    ✅    |
+| Improper Error Handling          | `/identity/api/auth/v3/check-otp`                |       ✅      |    ✅    |
+| Improper Error Handling          | `/identity/api/auth/v2.7/user/login-with-token`  |       ✅      |    ✅    |
+| Improper Error Handling          | `/workshop/api/mechanic/mechanic_report`         |       ✅      |    ❌    |
+| Improper Error Handling          | `/workshop/api/mechanic/receive_report`          |       ❌      |    ✅    |
+| Improper Error Handling          | `/community/api/v2/coupon/validate-coupon`       |       ❌      |    ✅    |
+| Improper Error Handling          | `/identity/api/v2/user/verify-email-token`       |       ❌      |    ✅    |
+| Improper Error Handling          | `/workshop/api/shop/orders/return_order`         |       ❌      |    ✅    |
+| Improper Error Handling          | `/workshop/api/shop/apply_coupon`                |       ❌      |    ✅    |
+| Improper Error Handling          | `/workshop/api/shop/orders/all`                  |       ❌      |    ✅    |
+| Improper Error Handling          | `/workshop/api/merchant/contact_mechanic`        |       ❌      |    ✅    |
+| Improper Error Handling          | `/identity/api/v2/user/pictures`                 |       ❌      |    ✅    |
+| Improper Error Handling          | `/identity/api/v2/user/videos`                   |       ❌      |    ✅    |
+| Invalid Dynamic Object Handling  | `/community/api/v2/community/posts/{id}/comment` |       ❌      |    ✅    |
+| Improper Error Handling          | `/community/api/v2/community/posts/recent`       |       ❌      |    ✅*   |
+| Improper Error Handling          | `/workshop/api/shop/orders`                      |       ❌      |    ✅*   |
+
+* Finding reported by RESTler during fuzzing but not manually reproduced during validation.
+
+---
+
+## Summary
+
+| Metric                           | Schemathesis | RESTler |
+| -------------------------------- | :----------: | :-----: |
+| Total Findings                   |       7      |    15   |
+| Confirmed Findings               |       7      |    5    |
+| Shared Findings                  |       3      |    3    |
+| Exclusive Findings               |       4      |    12   |
+| Authentication Findings          |       3      |    0    |
+| Access Control Findings          |       2      |    0    |
+| Improper Error Handling Findings |       4      |    14   |
+| Dynamic Object Findings          |       0      |    1    |
+
+### Findings Detected by Both Tools
+
+1. `/identity/api/auth/v2/check-otp`
+2. `/identity/api/auth/v3/check-otp`
+3. `/identity/api/auth/v2.7/user/login-with-token`
+
+### Findings Exclusive to Schemathesis
+
+1. Authentication Bypass on `/workshop/api/shop/orders/{order_id}`
+2. IDOR / Broken Access Control on `/workshop/api/shop/orders/{order_id}`
+3. Improper Authentication Handling on `/identity/api/v2/user/dashboard`
+4. Improper Error Handling on `/workshop/api/mechanic/mechanic_report`
+
+### Findings Exclusive to RESTler
+
+1. `/workshop/api/mechanic/receive_report`
+2. `/community/api/v2/coupon/validate-coupon`
+3. `/identity/api/v2/user/verify-email-token`
+4. `/workshop/api/shop/orders/return_order`
+5. `/workshop/api/shop/apply_coupon`
+6. `/workshop/api/shop/orders/all`
+7. `/workshop/api/merchant/contact_mechanic`
+8. `/identity/api/v2/user/pictures`
+9. `/identity/api/v2/user/videos`
+10. `/community/api/v2/community/posts/{id}/comment`
+11. `/community/api/v2/community/posts/recent`
+12. `/workshop/api/shop/orders`
