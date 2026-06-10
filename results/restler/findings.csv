@@ -1,0 +1,16 @@
+tool,endpoint,finding_type,severity,status,notes,evidence_file
+RESTler,/workshop/api/mechanic/receive_report,Improper Error Handling,Medium,Confirmed,Invalid mechanic report parameters trigger HTTP 500,evidence/restler/mechanic_receive_report_500.txt
+RESTler,/community/api/v2/coupon/validate-coupon,Improper Error Handling,Medium,Confirmed,Invalid coupon code triggers HTTP 500,evidence/restler/community_coupon_validate_500.txt
+RESTler,/identity/api/v2/user/verify-email-token,Improper Error Handling,Medium,Confirmed,Invalid email verification token request triggers HTTP 500,evidence/restler/verify_email_token_500.txt
+RESTler,/identity/api/auth/v2/check-otp,Improper Error Handling,Medium,Confirmed,Invalid OTP validation request triggers HTTP 500,evidence/schemathesis/check_otp_500.txt
+RESTler,/identity/api/auth/v2.7/user/login-with-token,Improper Error Handling,Medium,Confirmed,Invalid login token request triggers HTTP 500,evidence/schemathesis/login_with_token_500.txt
+RESTler,/identity/api/auth/v3/check-otp,Improper Error Handling,Medium,Not validated,Invalid OTP validation request triggered HTTP 500 in RESTler replay,
+RESTler,/workshop/api/shop/orders/return_order,Improper Error Handling,Medium,Not validated,Invalid or malformed order_id triggered HTTP 500 in RESTler replay,
+RESTler,/workshop/api/shop/apply_coupon,Improper Error Handling,Medium,Not validated,Invalid coupon application payload triggered HTTP 500 in RESTler replay,
+RESTler,/workshop/api/shop/orders/all,Improper Error Handling,Medium,Not validated,Large pagination limit triggered HTTP 500 in RESTler replay,
+RESTler,/workshop/api/merchant/contact_mechanic,Improper Error Handling,Medium,Not validated,Invalid mechanic contact payload triggered HTTP 503 in RESTler replay,
+RESTler,/identity/api/v2/user/pictures,Improper Error Handling,Medium,Not validated,Picture upload endpoint triggered HTTP 500 in RESTler replay,
+RESTler,/identity/api/v2/user/videos,Improper Error Handling,Medium,Not validated,Video upload endpoint triggered HTTP 500 in RESTler replay,
+RESTler,/community/api/v2/community/posts/{id}/comment,Invalid Dynamic Object Handling,Medium,Not validated,RESTler InvalidDynamicObjectChecker found 500 when using invalid dynamic object in comment path,
+RESTler,/community/api/v2/community/posts/recent,Improper Error Handling,Medium,Not reproduced,RESTler replay used negative offset and triggered 500, but manual validation with offset=1 returned 200,
+RESTler,/workshop/api/shop/orders,Improper Error Handling,Medium,Not reproduced,RESTler replay triggered 500, but manual validation with product_id=1 and quantity=1 returned 200,

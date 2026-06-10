@@ -1,0 +1,11 @@
+HTTP/1.1 500 Internal Server Error
+Server: openresty/1.27.1.2
+Date: Tue, 09 Jun 2026 01:37:10 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Headers: Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization
+Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Origin: *
+
+{}

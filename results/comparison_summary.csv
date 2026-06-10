@@ -1,0 +1,3 @@
+tool,coverage_percent,requests,findings,server_errors
+Schemathesis,100.0,4622.0,120.0,15.666666666666666
+RESTler,49.6,273.6666666666667,22.333333333333332,22.333333333333332

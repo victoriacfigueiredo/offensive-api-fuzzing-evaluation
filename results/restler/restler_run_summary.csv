@@ -1,0 +1,5 @@
+run,coverage_successful,coverage_total,coverage_percent,rendered_requests,rendered_total,valid_requests,total_requests_sent,total_object_creations,bug_buckets,reproducible_bug_buckets
+run_01,24,43,55.8,37,43,24,234,172,22,22
+run_02,20,43,46.5,37,43,20,296,176,23,23
+run_03,20,43,46.5,36,43,20,291,170,22,22
+mean,21.33,43,49.6,36.67,43,21.33,273.67,172.67,22.33,22.33
