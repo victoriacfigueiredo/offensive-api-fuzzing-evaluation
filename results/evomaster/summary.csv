@@ -1,0 +1,4 @@
+run,potential_faults,covered_targets,evaluated_tests,successful_endpoints,total_endpoints
+run_01,76,566,6920,22,44
+run_02,78,567,7859,22,44
+run_03,78,562,8056,22,44
