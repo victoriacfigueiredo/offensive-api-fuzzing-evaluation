@@ -1,0 +1,7 @@
+api,tool,coverage_percent,requests,findings,server_errors
+crAPI,Schemathesis,100.0,4622.0,120.0,15.67
+crAPI,RESTler,49.6,273.67,22.33,22.33
+crAPI,EvoMaster,50.0,7611.67,77.33,77.33
+VAmPI,Schemathesis,100.0,1723.0,25.0,0.0
+VAmPI,RESTler,42.9,14.0,1.0,1.0
+VAmPI,EvoMaster,100.0,39280.0,12.0,0.0

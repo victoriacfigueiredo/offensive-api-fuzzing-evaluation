@@ -1,0 +1,7 @@
+tool,endpoint,finding_type,severity,status,description
+Schemathesis,/users/v1/_debug,Sensitive Information Disclosure,High,Confirmed,Endpoint exposes usernames emails passwords and admin flags
+Schemathesis,/users/v1/_debug,Plaintext Password Exposure,High,Confirmed,Passwords are returned in clear text
+Schemathesis,/users/v1/{username},Schema Violation,Low,Confirmed,API response does not match OpenAPI schema
+Schemathesis,/books/v1/{book_title},Schema Violation,Low,Confirmed,401 response body does not match documented schema
+Schemathesis,/users/v1/{username}/email,Schema Violation,Low,Confirmed,401 response body does not match documented schema
+Schemathesis,/users/v1/{username}/password,Schema Violation,Low,Confirmed,401 response body does not match documented schema

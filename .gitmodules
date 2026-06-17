@@ -1,0 +1,3 @@
+[submodule "apis/vampi"]
+	path = apis/vampi
+	url = https://github.com/erev0s/VAmPI.git

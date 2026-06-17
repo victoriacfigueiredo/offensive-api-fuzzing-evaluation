@@ -1,0 +1,5 @@
+run,coverage_successful,coverage_total,coverage_percent,attempted_requests,attempted_total,bug_buckets
+run_01,6,14,42.9,14,14,1
+run_02,6,14,42.9,14,14,1
+run_03,6,14,42.9,14,14,1
+mean,6,14,42.9,14,14,1

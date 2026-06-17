@@ -1,0 +1,45 @@
+Restler Information: 0 : Starting task FuzzLean...
+    DateTime=2026-06-17T02:37:59.9703630Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2026-06-17T02:38:01.0215899Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2026-06-17T02:38:01.0217023Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0100835 with exit code 0x0: 'python --version'
+    DateTime=2026-06-17T02:38:01.0447186Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0101119 with exit code 0x0: 'python3 --version'
+    DateTime=2026-06-17T02:38:01.0447774Z
+Restler Information: 0 : (25532) python --version exited with code: 0
+    DateTime=2026-06-17T02:38:01.0505419Z
+Restler Information: 0 : (25531) python3 --version exited with code: 0
+    DateTime=2026-06-17T02:38:01.0505988Z
+Restler Information: 0 : Launching 'python3 -B "/home/vic/offensive-api-fuzzing-evaluation/tools/restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/vic/offensive-api-fuzzing-evaluation/Compile/grammar.py" --custom_mutations "/home/vic/offensive-api-fuzzing-evaluation/Compile/dict.json" --set_version 9.3.1  --token_refresh_interval 3600 --token_refresh_cmd "/home/vic/offensive-api-fuzzing-evaluation/configs/vampi_restler_token.sh"  --no_ssl --host localhost   --enable_checkers * --disable_checkers namespacerule   --target_port 5002 --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2026-06-17T02:38:01.0638222Z
+Restler Information: 0 : Process execution terminated in 00:00:43.5307996 with exit code 0x0: 'python3 -B "/home/vic/offensive-api-fuzzing-evaluation/tools/restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/vic/offensive-api-fuzzing-evaluation/Compile/grammar.py" --custom_mutations "/home/vic/offensive-api-fuzzing-evaluation/Compile/dict.json" --set_version 9.3.1  --token_refresh_interval 3600 --token_refresh_cmd "/home/vic/offensive-api-fuzzing-evaluation/configs/vampi_restler_token.sh"  --no_ssl --host localhost   --enable_checkers * --disable_checkers namespacerule   --target_port 5002 --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2026-06-17T02:38:44.5955391Z
+Restler Information: 0 : (25535) python3 -B "/home/vic/offensive-api-fuzzing-evaluation/tools/restler/restler_bin/restler/../engine/restler.py" --restler_grammar "/home/vic/offensive-api-fuzzing-evaluation/Compile/grammar.py" --custom_mutations "/home/vic/offensive-api-fuzzing-evaluation/Compile/dict.json" --set_version 9.3.1  --token_refresh_interval 3600 --token_refresh_cmd "/home/vic/offensive-api-fuzzing-evaluation/configs/vampi_restler_token.sh"  --no_ssl --host localhost   --enable_checkers * --disable_checkers namespacerule   --target_port 5002 --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test exited with code: 0
+    DateTime=2026-06-17T02:38:44.5957009Z
+Restler Information: 0 : Launching 'dotnet "/home/vic/offensive-api-fuzzing-evaluation/tools/restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/vic/offensive-api-fuzzing-evaluation/FuzzLean" --output_dir "/home/vic/offensive-api-fuzzing-evaluation/FuzzLean/ResponseBuckets" --dictionary_file "/home/vic/offensive-api-fuzzing-evaluation/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2026-06-17T02:38:44.6044175Z
+Restler Information: 0 : Process execution terminated in 00:00:01.0923239 with exit code 0x86: 'dotnet "/home/vic/offensive-api-fuzzing-evaluation/tools/restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/vic/offensive-api-fuzzing-evaluation/FuzzLean" --output_dir "/home/vic/offensive-api-fuzzing-evaluation/FuzzLean/ResponseBuckets" --dictionary_file "/home/vic/offensive-api-fuzzing-evaluation/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2026-06-17T02:38:45.6968730Z
+Restler Information: 0 : (27605) dotnet "/home/vic/offensive-api-fuzzing-evaluation/tools/restler/restler_bin/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/vic/offensive-api-fuzzing-evaluation/FuzzLean" --output_dir "/home/vic/offensive-api-fuzzing-evaluation/FuzzLean/ResponseBuckets" --dictionary_file "/home/vic/offensive-api-fuzzing-evaluation/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 134
+    DateTime=2026-06-17T02:38:45.6971612Z
+Restler Error: 0 : Results analyzer for logs in /home/vic/offensive-api-fuzzing-evaluation/FuzzLean failed.
+    DateTime=2026-06-17T02:38:45.7020584Z
+Restler Information: 0 : Request coverage (successful / total): 6 / 14
+    DateTime=2026-06-17T02:38:45.8083143Z
+Restler Information: 0 : Attempted requests: 14 / 14
+    DateTime=2026-06-17T02:38:45.8089708Z
+Restler Information: 0 : Bugs were found!
+    DateTime=2026-06-17T02:38:45.8135118Z
+Restler Information: 0 : Bug buckets:
+    DateTime=2026-06-17T02:38:45.8135326Z
+Restler Information: 0 : 
+InvalidValueChecker_500: 1
+    DateTime=2026-06-17T02:38:45.8146916Z
+Restler Information: 0 : See 'coverage_failures_to_investigate.txt' to investigate API coverage.
+    DateTime=2026-06-17T02:38:45.8918410Z
+Restler Information: 0 : Task FuzzLean succeeded.
+    DateTime=2026-06-17T02:38:45.8964613Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2026-06-17T02:38:46.2149379Z

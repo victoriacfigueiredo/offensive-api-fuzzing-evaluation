@@ -1,0 +1,13 @@
+tool,endpoint,finding_type,severity,status
+EvoMaster,/me,Schema Violation,Low,Confirmed
+EvoMaster,/books/v1,Schema Violation,Low,Confirmed
+EvoMaster,/users/v1/register,Schema Violation,Low,Confirmed
+EvoMaster,/books/v1/{book_title},Schema Violation,Low,Confirmed
+EvoMaster,/users/v1/{username},Schema Violation,Low,Confirmed
+EvoMaster,/users/v1/{username}/password,Schema Violation,Low,Confirmed
+EvoMaster,/users/v1/{username}/email,Schema Violation,Low,Confirmed
+EvoMaster,/users/v1/login,Hidden Accessible Operation,Medium,Confirmed
+EvoMaster,/users/v1/register,Hidden Accessible Operation,Medium,Confirmed
+EvoMaster,/users/v1/_debug,Hidden Accessible Operation,Medium,Confirmed
+EvoMaster,/users/v1/login,Hidden Accessible Operation,Medium,Confirmed
+EvoMaster,/users/v1/register,Hidden Accessible Operation,Medium,Confirmed
